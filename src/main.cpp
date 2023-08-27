@@ -27,6 +27,17 @@ int main() {
 
 	configFile.close();
 
+
+	configFile.open(configFilePath, std::ios::in);
+
+	std::string line;
+	
+	while (std::getline(configFile, line)) {
+		std::cout << line << std::endl;
+	}
+
+	configFile.close();
+
 	int a;
 	std::cin >> a;
 	return 0;
