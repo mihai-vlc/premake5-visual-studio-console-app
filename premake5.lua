@@ -8,6 +8,7 @@ workspace "MyConsoleApp"
 project "MyConsoleApp"
    kind "ConsoleApp"
    language "C++"
+   cppdialect "C++20"
 
    targetdir "bin/%{cfg.buildcfg}/bin"
    objdir "bin/%{cfg.buildcfg}/obj"
